@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_grundlagen/presentation/widgets_examples/widgets_examples_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,13 +12,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: const Text("MyApp")),
-        body: const Center(
-          child: Text("Hello World!"),
-        ),
-      ),
-    );
+    return const MaterialApp(
+        debugShowCheckedModeBanner: false, home: WidgetsExamplesPage());
   }
 }
