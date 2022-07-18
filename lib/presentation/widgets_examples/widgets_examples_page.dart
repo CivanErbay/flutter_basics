@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/container_text_example.dart';
+import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/profile_picture.dart';
+import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/rectangular-image.dart';
 import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/row_expanded_example.dart';
 
 class WidgetsExamplesPage extends StatelessWidget {
@@ -22,7 +24,10 @@ class WidgetsExamplesPage extends StatelessWidget {
               children: const [
                 ContainerTextExample(),
                 SizedBox(height: 10),
-                RowExpandedExample()
+                RowExpandedExample(),
+                ProfilePicture(),
+                SizedBox(height: 10),
+                RectangularImage(),
               ],
             ),
           ),
